@@ -1,0 +1,15 @@
+:root
+{
+    --us_primary-color: #4458dc;
+    --us_primary-color2: #854fee;
+
+    --us_title-color: #141313;
+    --us_text-color: #777777;  
+    --us_border-color: #201f1f17; 
+
+    --us_gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --us_shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+    --us_box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    
+    --usroboto: 'Roboto', cursive;
+}

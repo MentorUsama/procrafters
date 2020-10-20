@@ -1,0 +1,521 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* Including important css */
+@import url(../assest/fonts/Roboto/Roboto-Regular.ttf);
+@import url(__extras/__variable.css);
+
+
+
+a,a:hover{color: inherit;text-decoration: none;}
+/* Common CSS */
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: var(--usroboto);
+}
+.us-heading
+{
+    color: var(--us_title-color);
+    font-weight: bolder;
+}
+.us-para
+{
+    color: var(--us_text-color);
+}
+
+
+
+
+/* ==================================== Navigation Setting ===================== */
+#us-navigation .navbar
+{
+    width: 100%;
+}
+
+.us-sticky
+{
+    background-color: white;
+    position: fixed;
+    top:0;
+    box-shadow: var(--us_box-shadow);
+    z-index: 9;
+    transition: background 1s ease;
+}
+
+
+.us-svg
+{
+    width: 130px;
+    height: 60px;
+    fill: #777777;
+}
+.us-logo
+{
+    color: #777777;
+}
+.us-logo:hover
+{
+    color: #854fee;
+    font-weight: bold;
+}
+.us-logo:hover .us-svg
+{
+    fill: #844fee;
+}
+
+
+
+#us-navigation .navbar-nav a
+{
+    color: var(--us_text-color);
+    margin-left: 2.5rem;
+    font-size: 17px;
+    font-style: normal;
+}
+#us-navigation .navbar-nav a:hover
+{
+    color: var(--us_primary-color2);
+}
+#us-navigation .navbar-nav .active a
+{
+    color: var(--us_primary-color2);
+    font-weight: bold;
+}
+#us-navigation .navbar-toggler-icon
+{
+    fill: black !important;
+    color: black;
+}
+
+
+.us-button-empty.hr-btn:hover
+{
+    color: white !important;
+}
+@media (max-width: 768px) 
+{
+    #us-navigation .navbar-nav a
+    {
+        color: var(--us_text-color);
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 576px) {
+    #us-navigation .navbar-nav
+    {
+        margin-top: 20px;
+    }
+}
+/* ==================================== Navigation Setting Ends ===================== */
+
+
+
+
+
+/* ==================================== Banner Setting Starts===================== */
+#us-banner
+{
+    margin-top: 80px;
+}
+#us-banner .us-row
+{
+    height: 91vh;
+}
+
+
+#us-banner .column1
+{
+    padding-left: 10%;
+}
+#us-banner .column2
+{
+    padding-top: 20px;
+}
+
+#us-banner .us-hey::after
+{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 50%;
+    background-color: black;
+    margin-left: 10px;
+}
+#us-banner .us-about h1
+{
+    font-size: 60px;
+}
+
+.us-button-fill,.us-button-empty
+{
+    width:130px;
+}
+
+.us-button-fill,.us-button-empty:hover
+{
+    background: var(--us_gradient-color);
+    color: white;
+    position: relative;
+    -webkit-transition: background 1s ease;
+    -o-transition: background 1s ease;
+    transition: background 1s ease;
+}
+.us-button-fill:hover,.us-button-empty
+{
+    background: white;
+    color: var(--us_primary-color2);
+    -webkit-box-shadow: var(--us_box-shadow);
+            box-shadow: var(--us_box-shadow);
+    position: relative;
+    -webkit-transition: background 1s ease;
+    -o-transition: background 1s ease;
+    transition: background 1s ease;
+}
+.us-button-fill:hover::after,.us-button-empty::after
+{
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: var(--us_gradient-color);
+    z-index: -1;
+    border-radius: 2px;
+}
+@media (max-width: 768px) 
+{
+    #us-banner .us-row
+    {
+        height: auto;
+    }
+}
+/* ==================================== Banner Setting Ends ===================== */
+
+
+
+/* ==================================== Introduction starts here =============== */
+#us-introduction .us-row
+{
+    padding: 40px;
+    padding-top: 60px;
+}
+
+@media (min-width: 992px) 
+{
+    #us-introduction .us-row
+    {
+        height: 90vh;
+    }
+}
+@media (max-width: 992px) 
+{
+    #us-introduction .column1
+    {
+        padding-top: 60px;
+    }
+}
+/* ==================================== Introduction Ends Here ================= */
+
+
+
+
+
+
+/* ==================================== Services Starts Here ========================*/
+#us-service-offer
+{
+    padding-top: 100px;
+    text-align: center;
+}
+#us-service-offer .us-card
+{
+    width: 250px !important;
+    background-color: #F8FCFD;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+#us-service-offer .us-card:hover
+{
+    -webkit-box-shadow: var(--us_box-shadow);
+            box-shadow: var(--us_box-shadow);
+}
+
+#us-service-offer .us-card img
+{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+#us-service-offer .us-card h4
+{
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 22px;
+}
+
+
+.fiver-message
+{
+    color: green;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.fiver-message:hover
+{
+    cursor: pointer;
+}
+
+/* ==================================== Services Ends Here ========================*/
+
+
+
+
+/* =================================== Project Done =================== */
+#us-project .card-columns div
+{
+    display: none;
+}
+#us-project .card-columns .us-show
+{
+    display: inline-block;
+}
+#us-project .us-gal-link-active
+{
+    color: black;
+}
+#us-project #us-gal-button-container a:hover
+{
+    cursor: pointer;
+}
+
+@media (max-width: 992px) 
+{
+    .card-columns {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      -webkit-column-gap: 1.25rem;
+      -moz-column-gap: 1.25rem;
+      column-gap: 1.25rem;
+      orphans: 1;
+      widows: 1;
+    }
+    .card-columns .card {
+      display: inline-block;
+      width: 100%;
+    }
+}
+
+@media (max-width: 576px) 
+{
+    .card-columns {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      -webkit-column-gap: 1.25rem;
+      -moz-column-gap: 1.25rem;
+      column-gap: 1.25rem;
+      orphans: 1;
+      widows: 1;
+    }
+    .card-columns .card {
+      display: inline-block;
+      width: 100%;
+    }
+
+    #us-project .card-columns
+    {
+        padding: 80px;
+    }
+}
+
+@media (max-width: 450px) 
+{
+    #us-project .card-columns
+    {
+        padding: 0px;
+    }
+}
+
+
+
+.gallery-contain
+{
+    padding-top: 20px;
+}
+.us-gal-container
+{
+    height: 300px;
+    overflow: hidden;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    transition: background-position 8s ease;
+    border: 10px solid white;
+    -webkit-box-shadow: var(--us_box-shadow);
+    box-shadow: 0px 1px 10px rgba(57, 56, 61, 0.205);
+}
+.us-gal-container:hover
+{
+    background-position: bottom !important;
+    cursor: pointer;
+}
+
+.us-gal-container.us-additional
+{
+    height: 360px;
+}
+
+
+
+
+/* =================================== Project Done Ends ==============*/  
+
+
+
+
+/* =================================== Testimonia Done =================== */
+#us-testimonials 
+{
+    padding-top: 170px;
+    padding-bottom: 50px;
+}
+#us-testimonials .us-client
+{
+    margin: 10px;
+    box-shadow: var(--us_box-shadow);
+}
+
+
+#us-testimonials .us-client h1
+{
+    font-size: 25px;
+    font-weight: normal;
+}
+#us-testimonials .us-client p
+{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+#us-testimonials .us-client .us-client-img,#us-testimonials .us-client .us-client-about
+{
+    padding:1rem;
+}
+
+#us-testimonials .owl-carousel .owl-item
+{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+/* =================================== Testimonial Done =================== */
+
+
+
+
+/* ==================================== Contacts Goes Here ================= */
+#us-contacts
+{
+    color: white;
+    padding-top: 100px;
+}
+
+#us-contacts .us-row
+{
+    height: 60vh;
+    background: url("../assest/img/subscribe-bg.png");
+    background-color: #5356E0;
+    padding-right: 100px;
+}
+
+#us-contacts .contact-heading h1
+{
+    margin-bottom: 30px;
+}
+#us-contacts .contact-heading p
+{
+    font-size: 20px;
+}
+
+
+#us-contacts .contact-submit
+{
+    padding-top: 30px;
+}
+
+
+#us-contacts .us-button-empty
+{
+    box-shadow: none;
+}
+#us-contacts .us-button-empty:hover
+{
+    background: white;
+    color: var(--us_primary-color2);
+    border: 2px solid green;
+    box-sizing: border-box;
+}
+
+#us-contacts .contact-submit input
+{
+    color: white;
+    background: transparent;
+    border:1px solid white;
+    width: 230px;
+    height: 36px;
+    padding-left: 15px;
+    margin-right: 20px;
+}
+#us-contacts .contact-submit input::placeholder
+{
+    color: rgba(255, 255, 255, 0.397);
+}
+#us-contacts .contact-submit input:active,#us-contacts .contact-submit input:focus
+{
+    outline: none;
+}
+
+
+@media (max-width:556px)
+{
+    #us-contacts .us-row
+    {
+        height: 80vh;
+        background: none;
+        background-color: #5356E0;
+        padding-right: 10px;
+    }
+}
+
+/* ==================================== Contacts Goes Here ================= */
+
+
+/* ===================================== Footer ============================ */
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../assest/img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+/* ===================================== Footer Ends ======================= */
